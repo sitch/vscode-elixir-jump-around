@@ -1,0 +1,45 @@
+{
+    "name": "elixir-jump-around",
+    "displayName": "elixir-jump-around",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "no",
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.jump"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.jump",
+                "title": "Elixir Test/File Jump"
+            }
+        ],
+        "keybindings": [{
+            "command": "extension.jump",
+            "key": "alt-g alt-t",
+            "mac": "alt-g alt-t",
+            "when": "editorTextFocus"
+        }]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
