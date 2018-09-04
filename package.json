@@ -2,7 +2,7 @@
     "name": "elixir-jump-around",
     "displayName": "elixir-jump-around",
     "description": "",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "no",
     "engines": {
         "vscode": "^1.26.0"
@@ -21,12 +21,14 @@
                 "title": "Elixir Test/File Jump"
             }
         ],
-        "keybindings": [{
-            "command": "extension.jump",
-            "key": "alt-g alt-t",
-            "mac": "alt-g alt-t",
-            "when": "editorTextFocus"
-        }]
+        "keybindings": [
+            {
+                "command": "extension.jump",
+                "key": "alt-g alt-t",
+                "mac": "alt-g alt-t",
+                "when": "editorTextFocus"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
