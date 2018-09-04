@@ -1,4 +1,4 @@
-# elixir-jump-around README
+# elixir-jump-around
 
 Elixir Jump Around is a very simple tool that enables one to quickly switch between a module file and that module's test file.
 
