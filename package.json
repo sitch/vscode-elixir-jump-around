@@ -2,7 +2,7 @@
     "name": "elixir-jump-around",
     "displayName": "elixir-jump-around",
     "description": "Jump between Elixir modules and their test files",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "publisher": "sb8244",
     "repository": "https://github.com/sb8244/vscode-elixir-jump-around",
     "engines": {
