@@ -6,6 +6,10 @@ The file that is switched to will use a very simple set of rules. If the file is
 
 The default keybinding is `alt+g alt+t`.
 
+## Quirks
+
+One known quirk is that the associated file is created on disk rather than remaining unsaved. This is due to the save path not working properly in testing.
+
 ## Inspiration
 
 This extension is a VSCode adaptation of valo's elixir-jump-around for atom. https://github.com/valo/elixir-jump-around
