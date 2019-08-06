@@ -38,11 +38,11 @@ function createAndOpen(path: string) {
 }
 
 function getModulePath(filePath: string) {
-    return filePath.replace("test", "lib").replace(/_test\.exs$/, ".ex");
+    return filePath.replace("test/lib", "lib").replace(/_test\.exs$/, ".ex");
 }
 
 function getTestPath(filePath: string) {
-    return filePath.replace("lib", "test").replace(/\.ex$/, "_test.exs");
+    return filePath.replace("lib", "test/lib").replace(/\.ex$/, "_test.exs");
 }
 
 function isTestFilePath(filePath: string) {
